@@ -1,60 +1,66 @@
 # Local AI Meeting Assistant
 
-**Local AI Meeting Assistant** is a privacy-focused, fully offline AI system for meeting transcription, speaker diarization, automated summarization, and action items extraction.
+<!-- One or two sentences: what the system does and for whom. -->
 
----
+Group diploma project, Astana IT University, School of Software Engineering, 2026–2027.
 
-## Problem Statement & Target Users
-- **Problem Statement:** Cloud-based meeting summary tools (e.g., Otter.ai, Read AI) require uploading audio to external servers, exposing confidential business discussions to data privacy and compliance risks.
-- **Target Users:** Enterprises, legal and financial institutions, government agencies, and teams requiring 100% data privacy and offline processing.
-- **Expected Outcomes:** A secure, local meeting assistant capable of processing multi-speaker recordings with verifiable action items (linked to original audio timestamps) and formatted protocol exports.
+**Topic:** Development of a Local AI-Based System for Automated Transcription, Summarization, and Action-Item Extraction from Corporate Meetings.
 
----
+**Official Russian topic:** Разработка локальной системы на основе искусственного интеллекта для автоматической транскрибации, суммаризации корпоративных совещаний и выделения поручений
 
-## Team Members & Responsibilities
+## Problem statement
+<!-- 3–5 sentences. Every claim must be backed by evidence: interviews (INT-xx), observations (OBS-xx) or literature (LIT-xx).
+     See docs/01-proposal.md and docs/02-relevance/findings.md. -->
 
-| Member | Track | Primary Role & Responsibility |
-| :--- | :--- | :--- |
-| **Yerassyl Jetibay** | **Track A — Platform & Data** | Backend API, Database Architecture, Data Retention & Infrastructure (`src/api`, `deploy/`) |
-| **Assanali Yessenbekov** | **Track B — UX & Quality** | Web Application UI/UX, Component Library, E2E & Usability Testing (`src/web`, `docs/08-ux/`) |
-| **Zhanassyl Sherkenov** | **Track C — Local AI** | AI Worker Pipeline, ASR (Faster-Whisper), Diarization (PyAnnote), LLM Summarization & Model Benchmarking (`src/worker`, `eval/`) |
+## Target users
+<!-- Who will use the system and in which organisations. Link to personas or findings. -->
 
-**Supervisor:** Almas Ospanov
+## Expected outcomes
+<!-- Measurable outcomes (system, evaluation report, pilot). Must match docs/01-proposal.md. -->
 
----
+## Team and responsibilities
 
-## Project Management & Tracking
-- **YouTrack Board:** [LAM Project Board](https://yerassyl.youtrack.cloud/projects/LAM/issues)
+| Member | Track | Responsibilities | GitHub |
+|---|---|---|---|
+| Yerassyl Jetibay | A — Platform & Data | Backend, database, security, CI/CD, deployment | @<login> |
+| Assanali Yessenbekov | B — UX & Quality | User research, UI/UX, frontend, e2e and usability testing, pilot | @<login> |
+| Zhannasyl Sherkenov | C — Local AI | ASR, diarization, LLM pipeline, model evaluation | @<login> |
 
----
+**Supervisor:** Almas Ospanov, Senior Lecturer, School of Software Engineering.
 
-## Development Status & Scope
-- **Current Status:** Phase 1 — Analysis, Architecture, and System Requirements Specification.
-- **Code Implementation:** Scheduled to begin in November.
+## Scope
+### In scope (MVP)
+<!-- Bullet list; must match the Must requirements in docs/06-requirements.md. -->
+### Out of scope
+<!-- At least 5 items. -->
 
----
+## Current status
 
-## Selected Technologies
-- **Speech-to-Text (ASR):** Faster-Whisper
-- **Speaker Diarization:** PyAnnote Audio
-- **LLM / Summarization:** Ollama (`qwen2.5` / `llama3`)
-- **Backend API:** Python, FastAPI, PostgreSQL, Alembic
-- **Frontend:** Web Application UI
-- **Infrastructure:** Docker Compose, Caddy Reverse Proxy
+| Date | Stage | Status |
+|---|---|---|
+| 2026-10-24 | Analysis, design and planning checkpoint | <!-- done / in progress --> |
 
----
+## Selected technologies
+<!-- List only decisions already recorded in docs/05-technology-comparison.md and docs/adr/. -->
 
-## Project Documentation
-- `docs/01-proposal.md` — Project Proposal
-- `docs/03-literature-review.md` — Literature Review (12+ sources)
-- `docs/04-existing-systems.md` — Comparison of Existing Systems
-- `docs/05-technology-comparison.md` — Technology Stack Alternatives
-- `docs/06-requirements.md` — Functional & Non-Functional Requirements
-- `docs/07-architecture.md` — System Architecture & Component Diagrams
-- `docs/09-verification-plan.md` — Verification and Evaluation Plan
-- `docs/11-supervisor-feedback.md` — Supervisor Feedback & Action Notes
+## Links
+- YouTrack project: <URL>
+- Documentation: [docs/](docs/)
+- Prototype: <Figma/Penpot URL>
+- Supervisor feedback log: [docs/11-supervisor-feedback.md](docs/11-supervisor-feedback.md)
 
----
+## Repository structure
+```
+docs/        proposal, relevance evidence, literature, comparisons, requirements, architecture, UX, plans
+docs/diagrams/src     editable diagram sources;  docs/diagrams/export  readable exports (SVG/PNG)
+docs/adr/    architecture decision records
+src/         application code (by component) — from the implementation stage
+tests/       automated tests and test materials
+eval/        evaluation scripts and spikes (no raw recordings)
+```
 
-## Setup & Execution Instructions
-> *Detailed setup instructions will be added as soon as runnable code modules are deployed in November.*
+## Setup, run and test
+<!-- Fill in as soon as runnable code exists. -->
+
+## Use of AI tools
+Declared in [AI_USAGE.md](AI_USAGE.md) (AITU Academic Policy, §50–53).
