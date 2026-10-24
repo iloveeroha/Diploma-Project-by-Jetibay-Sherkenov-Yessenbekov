@@ -1,0 +1,32 @@
+﻿graph TD
+    User([Meeting Organizer / Member])
+    Admin([System Administrator])
+    Auditor([Compliance Auditor])
+
+    subgraph Core Platform
+        UC1[Upload Audio / Record in Browser]
+        UC2[Monitor Processing Stepper via SSE]
+        UC3[Interactive Transcript Playback with Click-to-Seek]
+        UC4[Inline Transcript & Speaker Editing]
+        UC5[Triage & Verify Action Items with Audio Quotes]
+        UC6[Export Minutes DOCX/PDF/Markdown/JSON]
+    end
+
+    subgraph Administration & Compliance
+        UC7[Manage Users & Workspaces RBAC]
+        UC8[Configure Data Retention Policy]
+        UC9[Inspect Immutable Audit Log]
+    end
+
+    User --> UC1
+    User --> UC2
+    User --> UC3
+    User --> UC4
+    User --> UC5
+    User --> UC6
+
+    Admin --> UC7
+    Admin --> UC8
+    Admin --> UC9
+
+    Auditor --> UC9
