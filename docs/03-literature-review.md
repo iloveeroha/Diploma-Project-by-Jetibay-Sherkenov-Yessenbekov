@@ -59,3 +59,5 @@ LIT-06 provides a Kazakh summarisation baseline. CTranslate2 provides an enginee
 6. T. Zhabayev and U. Tukeyev, “Development of Technology for Summarization of Kazakh Text,” *International Journal of Advanced Computer Science and Applications*, vol. 12, no. 9, 2021. Accessed: October 2026.
 7. OpenNMT, “CTranslate2,” open-source software repository, 2026. Available: [https://github.com/OpenNMT/CTranslate2](https://github.com/OpenNMT/CTranslate2). Accessed: October 2026.
 8. G. Adams et al., “From Sparse to Dense: GPT-4 Summarization with Chain of Density Prompting,” *NewSum Workshop*, 2023. DOI: [10.18653/v1/2023.newsum-1.7](https://doi.org/10.18653/v1/2023.newsum-1.7). Accessed: October 2026.
+
+<!-- Verified by Track C (Zhanassyl Sherkenov) against supervisor guidance G-04: DOIs confirmed. -->
