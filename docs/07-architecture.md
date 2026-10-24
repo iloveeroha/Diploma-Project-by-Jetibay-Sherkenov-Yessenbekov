@@ -17,3 +17,8 @@ Sources: Based on supervisor guidance materials G-01, G-03, and G-05 (Almas Ospa
 ## 4. Consistency matrix
 | Use case | FR IDs | Components |
 |---|---|---|
+
+## Use Case Model
+
+Detailed use case definitions and actor interactions are documented in [docs/diagrams/src/usecase.mermaid](diagrams/src/usecase.mermaid).
+
